@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Deps:
+# 	curl
+
+weatherreport="${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport"
+getforecast() { curl -sf "wttr.in/$LOCATION" > "$weatherreport" || exit 1 ;}
+
+get_weather()
+{
+	curl -s v2.wttr.in/$LOCATION | grep -e "Weather" | sed -n 2p | sed s/Weather://g | sed 's/,//g' | sed 's/+//g' | sed 's/°C.*/°C/' | sed 's/.*m//'
+}
+
+get_weather
