@@ -1,0 +1,3 @@
+[submodule ".telegram-palette-gen"]
+	path = .telegram-palette-gen
+	url = https://github.com/agnipau/telegram-palette-gen.git
