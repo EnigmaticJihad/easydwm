@@ -1,0 +1,84 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = false
+
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = "[$path]($style)[$read_only]($read_only_style) "
+disabled = false
+read_only = "🔒"
+read_only_style = "red"
+truncation_symbol = ""
+home_symbol = "~"
+
+[git_branch]
+always_show_remote = false
+format = "on [$symbol$branch]($style) "
+symbol = " "
+style = "bold purple"
+truncation_symbol = "…"
+only_attached = false
+disabled = false
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+conflicted = "="
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+up_to_date = ""
+untracked = "?"
+stashed = "$"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+style = "bold red"
+disabled = false
+
+[hostname]
+ssh_only = false
+trim_at = "."
+format = "[$hostname]($style) in "
+style = "bold dimmed green"
+disabled = false
+
+[shell]
+disabled = false
+
+[status]
+format = "[$symbol$status]($style) "
+symbol = "✖"
+success_symbol = "✔️"
+not_executable_symbol = "🚫"
+not_found_symbol = "🔍"
+sigint_symbol = "🧱"
+signal_symbol = "⚡"
+style = "bold red"
+recognize_signal_code = true
+map_symbol = false
+disabled = false
+
+
+[time]
+format = "at [$time]($style) "
+use_12hr = true
+style = "bold yellow"
+disabled = false
+time_range = "-"
+
+[username]
+style_root = "bold red"
+style_user = "bold yellow"
+format = "[$user]($style) in "
+show_always = true
+disabled = false
