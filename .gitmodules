@@ -1,3 +1,6 @@
 [submodule ".telegram-palette-gen"]
 	path = .telegram-palette-gen
 	url = https://github.com/agnipau/telegram-palette-gen.git
+[submodule ".zathura-pywal"]
+	path = .zathura-pywal
+	url = https://github.com/GideonWolfe/Zathura-Pywal
