@@ -37,6 +37,8 @@ alias dwmconf='cd && cd ~/.local/src/dwm/ && nvim config.h'
 alias src='cd && cd ~/.local/src/ && ls'
 alias ro='sudo pacman -Rs $(pacman -Qqtd)'
 alias lsg='ls | grep'
+alias pacl='pacman -Qe | awk '{print $1}' >> packages.txt'
+alias dotx='/usr/bin/git --git-dir=/home/zed/dotfiles --work-tree=/home/zed'
 
 ################################################
 
@@ -68,4 +70,3 @@ export PATH="/home/zed/.local/bin/statusbar:$PATH"
 ################### Fetch & Decore #################
 
 #neofetch --ascii ~/.config/neofetch/ascii-art/cyberpunk-skull-ascii | lolcat
-alias dotx='/usr/bin/git --git-dir=/home/zed/dotfiles --work-tree=/home/zed'
