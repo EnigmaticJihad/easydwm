@@ -1,3 +1,4 @@
+. ~/.cache/wal/colors.sh
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
@@ -24,9 +25,16 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 
+################# Nord DirColors ###############
+#test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
+
 ################################################
 ################### Aliases ####################
 
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+alias ls='ls --color=auto'
 alias v='nvim'
 alias vim='nvim'
 alias sv='sudo nvim'
@@ -49,13 +57,13 @@ alias dotx='/usr/bin/git --git-dir=/home/zed/dotfiles --work-tree=/home/zed'
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-#cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-#source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors-tty.sh
 
 ##################################################
 
@@ -64,9 +72,10 @@ alias dotx='/usr/bin/git --git-dir=/home/zed/dotfiles --work-tree=/home/zed'
 
 export PATH="/home/zed/.local/bin:$PATH"
 export PATH="/home/zed/.local/bin/statusbar:$PATH"
+export LESS='-R --use-color -Dd+r$Du+b'
 
 ##################################################
 
 ################### Fetch & Decore #################
 
-#neofetch --ascii ~/.config/neofetch/ascii-art/cyberpunk-skull-ascii | lolcat
+neofetch --ascii ~/.config/neofetch/ascii-art/cyberpunk-skull-ascii
