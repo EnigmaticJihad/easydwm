@@ -56,8 +56,8 @@ setxkbmap -option caps:escape,shift:both_capslock &
 
 ### Autostart ###
 /usr/bin/lxpolkit &
-#~/.config/scripts/dunst.sh &
-twmnd &
+~/.config/scripts/dunst.sh &
+#twmnd &
 redshift &
 numlockx &
 ibus-daemon -drx --xim &
@@ -69,6 +69,7 @@ picom &
 sleep 2s &
 slstatus &
 sleep 2s &
+megasync &
 todoist &
 
 # Add this to your .xinitrc or whatever file starts programs on startup.
