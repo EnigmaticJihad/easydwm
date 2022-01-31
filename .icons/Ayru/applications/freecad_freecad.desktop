@@ -1,0 +1,21 @@
+[Desktop Entry]
+X-SnapInstanceName=freecad
+Name=FreeCAD
+Name[de]=FreeCAD
+Name[pl]=FreeCAD
+Name[ru]=FreeCAD
+Comment=Feature based Parametric Modeler
+Comment[de]=Feature-basierter parametrischer Modellierer
+Comment[ru]=Система автоматизированного проектирования
+GenericName=CAD Application
+GenericName[de]=CAD-Anwendung
+GenericName[pl]=Aplikacja CAD
+GenericName[ru]=Система автоматизированного проектирования
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/freecad_freecad.desktop /snap/bin/freecad %F
+Terminal=false
+Type=Application
+Icon=freecad
+Categories=Graphics;Science;Education;Engineering;
+StartupNotify=true
+MimeType=application/x-extension-fcstd;
+
