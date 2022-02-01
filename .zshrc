@@ -31,10 +31,12 @@ eval "$(starship init zsh)"
 ################################################
 ################### Aliases ####################
 
+alias c='clear'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip -color=auto'
 alias ls='ls --color=auto'
+alias lsa='ls -a'
 alias v='nvim'
 alias vim='nvim'
 alias sv='sudo nvim'
@@ -76,6 +78,18 @@ export LESS='-R --use-color -Dd+r$Du+b'
 
 ##################################################
 
+################### FFF ##########################
+export FFF_LS_COLORS=1
+export EDITOR="nvim"
+export FFF_OPENER="xdg-open"
+export FFF_STAT_CMD="stat"
+
+###################### IBus #######################
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
 ################### Fetch & Decore #################
 
-neofetch --ascii ~/.config/neofetch/ascii-art/cyberpunk-skull-ascii
+#neofetch
+neofetch --ascii ~/.config/neofetch/ascii-art/astronaut2
