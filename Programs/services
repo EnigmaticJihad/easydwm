@@ -1,0 +1,7 @@
+NetworkManager.service
+chronyd.service
+nftables.service
+nohang-desktop.service
+systemd-resolved.service
+tor.service
+vnstat.service
