@@ -71,6 +71,7 @@ slstatus &
 sleep 2s &
 megasync &
 todoist &
+thunderbird &
 
 # Add this to your .xinitrc or whatever file starts programs on startup.
 # -R restores the last colorscheme that was in use.
